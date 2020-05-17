@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularLinkedList", "Circu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularDoublyLinkedList", "CircularDoublyLinkedList\CircularDoublyLinkedList.csproj", "{01F32F05-2FF2-4C61-A70B-2BEBC6640248}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackStructure", "StackStructure\StackStructure.csproj", "{FBF8086E-3231-4E02-B961-AFE76B8292CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{01F32F05-2FF2-4C61-A70B-2BEBC6640248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01F32F05-2FF2-4C61-A70B-2BEBC6640248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01F32F05-2FF2-4C61-A70B-2BEBC6640248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF8086E-3231-4E02-B961-AFE76B8292CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF8086E-3231-4E02-B961-AFE76B8292CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF8086E-3231-4E02-B961-AFE76B8292CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF8086E-3231-4E02-B961-AFE76B8292CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
