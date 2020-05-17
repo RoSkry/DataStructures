@@ -46,6 +46,23 @@ namespace StackStructure
             stackListItem = stackList.Peek();
             Console.WriteLine(stackListItem);
             #endregion
+            Console.WriteLine();
+            #region StackLinked 
+            Console.WriteLine("StackLinked");
+            var linkedStack = new StackLinked<int>();
+            linkedStack.Push(5);
+            linkedStack.Push(10);
+            //linkedStack.Push(15);
+            //linkedStack.Push(20);
+            //linkedStack.Push(25);
+          
+
+            Console.WriteLine(linkedStack.Peek());
+            Console.WriteLine(linkedStack.Pop());
+            Console.WriteLine(linkedStack.Pop());
+            Console.WriteLine(linkedStack.Peek());
+
+            #endregion
         }
     }
 }

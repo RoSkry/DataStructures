@@ -8,10 +8,10 @@ namespace StackStructure.Model
     {
         private T[] items;
         private int count;
-        public int CountInArray { get; } = 10;
+        public int ArraySize { get; } = 10;
         public StackArray()
         {
-            items = new T[CountInArray];
+            items = new T[ArraySize];
         }
         public StackArray(int lenght)
         {
