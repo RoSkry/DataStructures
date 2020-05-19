@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\Li
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoublyLinkedList", "DoublyLinkedList\DoublyLinkedList.csproj", "{F8CAAB97-7E00-4738-A47D-77A3886EC9AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularLinkedList", "CircularLinkedList\CircularLinkedList.csproj", "{7C442D22-71F2-4175-985A-EAA6F3F41CEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularLinkedList", "CircularLinkedList\CircularLinkedList.csproj", "{7C442D22-71F2-4175-985A-EAA6F3F41CEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularDoublyLinkedList", "CircularDoublyLinkedList\CircularDoublyLinkedList.csproj", "{01F32F05-2FF2-4C61-A70B-2BEBC6640248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularDoublyLinkedList", "CircularDoublyLinkedList\CircularDoublyLinkedList.csproj", "{01F32F05-2FF2-4C61-A70B-2BEBC6640248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackStructure", "StackStructure\StackStructure.csproj", "{FBF8086E-3231-4E02-B961-AFE76B8292CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackStructure", "StackStructure\StackStructure.csproj", "{FBF8086E-3231-4E02-B961-AFE76B8292CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueStructure", "QueueStructure\QueueStructure.csproj", "{E43AEE7B-B903-4B86-A010-1A8BC1C2581C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FBF8086E-3231-4E02-B961-AFE76B8292CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF8086E-3231-4E02-B961-AFE76B8292CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF8086E-3231-4E02-B961-AFE76B8292CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43AEE7B-B903-4B86-A010-1A8BC1C2581C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43AEE7B-B903-4B86-A010-1A8BC1C2581C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43AEE7B-B903-4B86-A010-1A8BC1C2581C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43AEE7B-B903-4B86-A010-1A8BC1C2581C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
