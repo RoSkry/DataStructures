@@ -27,12 +27,13 @@ namespace QueueStructure
             #region QueueArray
             Console.WriteLine("QueueArray");
 
-            var queueArray = new QueueArray<int>(10);
+            var queueArray = new QueueArray<int>(5);
+            queueArray.IsEmpty();
             queueArray.Enqueue(1);
             queueArray.Enqueue(2);
             queueArray.Enqueue(3);
-            queueArray.Enqueue(4);
-            queueArray.Enqueue(5);
+
+            queueArray.IsFull();
 
             Console.WriteLine(queueArray.Dequeue());
             Console.WriteLine(queueArray.Peek());
@@ -40,6 +41,18 @@ namespace QueueStructure
 
             #endregion
 
+            Console.WriteLine();
+
+            #region QueueWithoutCount
+            Console.WriteLine("QueueWithoutCount");
+            var queueWithoutCount = new QueueWithoutCount<int>(5);
+            queueWithoutCount.IsEmpty();
+            queueWithoutCount.Enqueue(1);
+            queueWithoutCount.Enqueue(2);
+            queueWithoutCount.Enqueue(3);
+
+            queueWithoutCount.Dequeue();
+            #endregion
         }
     }
 }
