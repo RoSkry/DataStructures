@@ -38,7 +38,7 @@ namespace QueueStructure.Model
             var item = new Item<T>(data);
           
             _tail.Next = item;
-            _tail = item;
+            _tail = _tail.Next;
             Count++;
         }
 
