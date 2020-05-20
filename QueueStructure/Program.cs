@@ -53,6 +53,19 @@ namespace QueueStructure
 
             queueWithoutCount.Dequeue();
             #endregion
+
+            Console.WriteLine();
+            #region QueueLinkedList
+            Console.WriteLine("QueueLinkedList");
+            var queueLinkedList = new QueueLinkedList<int>(1);
+            queueLinkedList.Enqueue(2);
+            queueLinkedList.Enqueue(3);
+            queueLinkedList.Enqueue(4);
+            queueLinkedList.Enqueue(5);
+
+            queueLinkedList.Dequeue();
+            queueLinkedList.Peek();
+            #endregion
         }
     }
 }
