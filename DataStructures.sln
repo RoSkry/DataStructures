@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackStructure", "StackStru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueStructure", "QueueStructure\QueueStructure.csproj", "{E43AEE7B-B903-4B86-A010-1A8BC1C2581C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DequeStructure", "DequeStructure\DequeStructure.csproj", "{475B3C37-3035-404E-8F19-3D989249B68B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DequeStructure", "DequeStructure\DequeStructure.csproj", "{475B3C37-3035-404E-8F19-3D989249B68B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetStructure", "SetStructure\SetStructure.csproj", "{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{475B3C37-3035-404E-8F19-3D989249B68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{475B3C37-3035-404E-8F19-3D989249B68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{475B3C37-3035-404E-8F19-3D989249B68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
