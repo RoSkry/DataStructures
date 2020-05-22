@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueStructure", "QueueStru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DequeStructure", "DequeStructure\DequeStructure.csproj", "{475B3C37-3035-404E-8F19-3D989249B68B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetStructure", "SetStructure\SetStructure.csproj", "{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SetStructure", "SetStructure\SetStructure.csproj", "{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableStructure", "HashTableStructure\HashTableStructure.csproj", "{97B7C539-4BDD-4C9B-9CAC-CB3D0B36B640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7AFE70A-78B3-4BFB-BCE5-CE98512905ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B7C539-4BDD-4C9B-9CAC-CB3D0B36B640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B7C539-4BDD-4C9B-9CAC-CB3D0B36B640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B7C539-4BDD-4C9B-9CAC-CB3D0B36B640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B7C539-4BDD-4C9B-9CAC-CB3D0B36B640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
