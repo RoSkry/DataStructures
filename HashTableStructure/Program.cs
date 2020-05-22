@@ -17,16 +17,20 @@ namespace HashTableStructure
             Console.WriteLine(rightHashTable.Search(new Person { Name = "Vasya", Age = 25, Gender = 0 }));
             Console.WriteLine(rightHashTable.Search(person));
 
-            Console.WriteLine("**************************");
+            var person1 = new Person { Name = "Vasya", Age = 35, Gender = 0, Id = 1 };
+            var person2 = new Person { Name = "Vanya", Age = 15, Gender = 0, Id = 2 };
+            var person3 = new Person { Name = "Petya", Age = 18, Gender = 1, Id = 3 };
 
-            var hashTable = new HashTable<int, string>(100);
-            hashTable.Add(5, "Hello");
-            hashTable.Add(18, "World");
-            hashTable.Add(777, "Hi");
-            hashTable.Add(7, "Program");
 
-            Console.WriteLine(hashTable.Search(6, "Kirill"));
-            Console.WriteLine(hashTable.Search(18, "World"));
+
+            var hashTable = new HashTable<int, Person>(10);
+            hashTable.Add(person1.Id, person1);
+            hashTable.Add(person2.Id, person2);
+            hashTable.Add(person3.Id, person3);
+
+
+            Console.WriteLine(hashTable.Search(person1.Id, person1));
+            Console.WriteLine(hashTable.Search(10, person1));
 
             Console.WriteLine("**************************");
 
