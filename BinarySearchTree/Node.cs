@@ -22,6 +22,10 @@ namespace BinarySearchTree
             Right = right;
         }
 
+        public Node()
+        {
+        }
+
         public void Add(T data)
         {
             var node = new Node<T>(data);

@@ -15,7 +15,6 @@ namespace BinarySearchTree
             tree.Add(8);
             tree.Add(6);
             tree.Add(9);
-            tree.Add(9);
             tree.Add(4);
 
             foreach (var item in tree.PreOrder())
@@ -34,6 +33,12 @@ namespace BinarySearchTree
             {
                 Console.Write(item + ", ");
             }
+
+            Console.WriteLine(tree.Search(3));
+            Console.WriteLine(tree.Search(123));
+
+            Console.WriteLine(tree.Max());
+            Console.WriteLine(tree.Min());
         }
     }
 }

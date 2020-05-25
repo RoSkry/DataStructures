@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace BinarySearchTree
@@ -23,6 +25,119 @@ namespace BinarySearchTree
             Root.Add(data);
             Count++;
         }
+
+        public Node<T> Search(T data)
+        {
+            var current = Root;
+            while (current.Data.CompareTo(data) != 0)
+            {
+                if (current.Data.CompareTo(data) == 1)
+                    current = current.Left;
+                else
+                    current = current.Right;
+                if (current == null)
+                    return null;
+            }
+            return current;
+        }
+
+        public bool Remove(T data)
+        {
+            var current = Root;
+            var parent = Root;
+            bool isLeftChild = true;
+
+            while (current.Data.CompareTo(data) != 0)
+            {
+                parent = current;
+                if (data.CompareTo(current.Data) == -1)
+                {
+                    isLeftChild = true;
+                    current = current.Left;
+                }
+                else
+                {
+                    isLeftChild = false;
+                    current = current.Right;
+                }
+                if (current == null)
+                    return false;
+            }
+
+            if (current.Left == null && current.Right == null)
+            {
+                if (current == Root)
+                    Root = null;
+                else if (isLeftChild)
+                    parent.Left = null;
+                else
+                    parent.Right = null;
+            }
+            else if (current.Right == null)
+            {
+                if (current == Root)
+                    Root = current.Left;
+                else if (isLeftChild)
+                    parent.Left = current.Left;
+                else
+                    parent.Right = current.Left;
+            }
+            else if (current.Left == null)
+            {
+                if (current == Root)
+                    Root = current.Right;
+                else if (isLeftChild)
+                    parent.Left = current.Right;
+                else
+                    parent.Right = current.Right;
+            }
+        }
+
+        private Node<T> GetSuccessor(Node<T> delNode)
+        {
+            var successorParent = delNode;
+            var successor = delNode;
+            var current = delNode.Right;
+            while (current != null)
+            {
+                successorParent = successor;
+                successor = current;
+                current = current.Left;
+            }
+            if (successor != delNode.Right)
+            {
+                successorParent.Left = successor.Right;
+                successor.Right = delNode.Right;
+            }
+            return successor;
+        }
+
+        public Node<T> Min()
+        {
+            Node<T> min = new Node<T>();
+            var current = Root;
+            while (current != null)
+            {
+                min = current;
+                current = current.Left;
+            }
+            return min;
+
+        }
+
+        public Node<T> Max()
+        {
+            Node<T> max = new Node<T>();
+            var current = Root;
+            while (current != null)
+            {
+                max = current;
+                current = current.Right;
+            }
+            return max;
+        }
+
+
 
         public List<T> PreOrder()
         {
