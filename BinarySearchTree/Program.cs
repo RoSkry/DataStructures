@@ -39,6 +39,13 @@ namespace BinarySearchTree
 
             Console.WriteLine(tree.Max());
             Console.WriteLine(tree.Min());
+
+            Console.WriteLine(tree.Remove(9));
+
+            foreach (var item in tree.InOrder())
+            {
+                Console.Write(item + ", ");
+            }
         }
     }
 }

@@ -91,6 +91,24 @@ namespace BinarySearchTree
                 else
                     parent.Right = current.Right;
             }
+            else
+            {
+                var successor = GetSuccessor(current);
+                if(current == Root)
+                {
+                    Root = successor;
+                }
+                else if (isLeftChild)
+                {
+                    parent.Left = successor;
+                }
+                else
+                {
+                    parent.Right = successor;
+                }
+                successor.Left = current.Left;
+            }
+            return true;
         }
 
         private Node<T> GetSuccessor(Node<T> delNode)
