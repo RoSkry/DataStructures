@@ -1,13 +1,28 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Heap
 {
-    public class Heap
+    public class Heap:IEnumerable
     {
         private List<int> _items = new List<int>();
         public int Count => _items.Count;
+
+
+        public Heap()
+        {
+
+        }
+        public Heap(List<int> items)
+        {
+            _items.AddRange(items);
+            for (int i = Count; i < 0; i--)
+            {
+                Sort(i);
+            }
+        }
 
         public int? Peek()
         {
@@ -38,7 +53,6 @@ namespace Heap
 
         public int GetMax()
         {
-
             var result = _items[0];
             _items[0] = _items[Count - 1];
             _items.RemoveAt(Count - 1);
@@ -48,29 +62,29 @@ namespace Heap
 
         private void Sort(int currentIndex)
         {
-            int  leftIndex, rightIndex;
-            int maxIndex= currentIndex;
+            int leftIndex, rightIndex;
+            int maxIndex = currentIndex;
             while (currentIndex < Count)
             {
                 leftIndex = 2 * currentIndex + 1;
                 rightIndex = 2 * currentIndex + 2;
 
-                if(_items[leftIndex] > _items[maxIndex])
+                if (leftIndex < Count && _items[leftIndex] > _items[maxIndex])
                 {
                     maxIndex = leftIndex;
                 }
 
-                if (_items[rightIndex] > _items[maxIndex])
+                if (rightIndex < Count && _items[rightIndex] > _items[maxIndex])
                 {
                     maxIndex = rightIndex;
                 }
 
-                if (maxIndex==currentIndex)
+                if (maxIndex == currentIndex)
                 {
                     break;
                 }
 
-                Swap(currentIndex,maxIndex);
+                Swap(currentIndex, maxIndex);
                 currentIndex = maxIndex;
 
             }
@@ -86,6 +100,14 @@ namespace Heap
         private int GetParentIndex(int currentIndex)
         {
             return (currentIndex - 1) / 2;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            while (Count>0)
+            {
+                yield return GetMax();
+            }
         }
     }
 }
