@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTree", "BinaryS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trie", "Trie\Trie.csproj", "{840727FF-5085-4504-9924-3B806BB28FBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "Heap\Heap.csproj", "{9A3ADB18-C4E5-427B-9517-BF4F23808DEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Heap", "Heap\Heap.csproj", "{9A3ADB18-C4E5-427B-9517-BF4F23808DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{33F8F03F-8A79-444A-A6FE-EFA2AD705220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{9A3ADB18-C4E5-427B-9517-BF4F23808DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A3ADB18-C4E5-427B-9517-BF4F23808DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A3ADB18-C4E5-427B-9517-BF4F23808DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F8F03F-8A79-444A-A6FE-EFA2AD705220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F8F03F-8A79-444A-A6FE-EFA2AD705220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F8F03F-8A79-444A-A6FE-EFA2AD705220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F8F03F-8A79-444A-A6FE-EFA2AD705220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
